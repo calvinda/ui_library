@@ -1,0 +1,25 @@
+.contact-banner {
+    background: transparent url('../images/contact-banner.jpg')no-repeat 0 0;
+    background-size: cover;
+    background-position: 0 -130px;
+    padding: 120px 0 40px;
+    color: white;
+    @include breakpoint($mobile) {
+        background-position: 0;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 40px;
+        @include breakpoint($mobile) {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 22px;
+            @include breakpoint($mobile) {
+                font-size: 14px;
+            }
+        }
+    }
+}

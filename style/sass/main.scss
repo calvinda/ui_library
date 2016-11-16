@@ -1,0 +1,27 @@
+/*
+  hapitron
+  Author - hapitron /  Kiki.
+*/
+/*
+  通用scss
+*/
+@import "breakpoint";
+@import "variables"; //變數
+@import "mixins"; //函式
+@import "extend"; //重複css
+@import "base";//網站最主要樣式設定：section高度、字型風格、大標題字體風格、文本設定、連結樣式
+@import "form"; //表單樣式
+@import "table"; //表格樣式
+@import "button"; //按鈕樣式
+/*
+  區塊方法匯入
+*/
+@import "modules/header"; //頁首
+@import "modules/footer"; //頁尾
+@import "modules/landing";
+@import "modules/websites";
+@import "modules/pricing";
+@import "modules/starting";
+@import "modules/contact";
+@import "modules/process";
+@import "modules/policy";

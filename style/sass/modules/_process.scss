@@ -1,0 +1,60 @@
+.process-banner {
+    background: transparent url('../images/process-banner.jpg')no-repeat 0 0;
+    background-size: cover;
+    background-position: 0 -130px;
+    padding: 120px 0 40px;
+    color: white;
+    @include breakpoint($mobile) {
+        background-position: 0;
+        padding: 0px 0 10px;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 40px;
+        @include breakpoint($mobile) {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 22px;
+            @include breakpoint($mobile) {
+                display:none;
+            }
+        }
+    }
+}
+
+.process-content{
+  background-color: #efefef;
+  padding: 30px 0 100px;
+  @include breakpoint($mobile) {
+      padding: 30px 0 45px;
+  }
+
+  .process-content-item{
+    margin-bottom:50px;
+
+    .process-content-title{
+      margin-top:0;
+    }
+
+    .numbers{
+      display: inline-block;
+      vertical-align: top;
+      font-size: 48px;
+      margin-top: 7px;
+    }
+    .process-content-inner{
+      display: inline-block;
+          margin-left: 20px;
+      width: 83%;
+      vertical-align: top;
+    }
+    .process-content-icon{
+      img{
+        width:100%;
+      }
+    }
+  }
+}

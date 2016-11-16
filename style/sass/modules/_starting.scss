@@ -1,0 +1,76 @@
+.starting-banner {
+    background: transparent url('../images/starting-banner.jpg')no-repeat 0 0;
+    background-size: cover;
+    background-position: 0 -130px;
+    padding: 50px 0 20px;
+    color: white;
+    @include breakpoint($mobile) {
+        background-position: 0;
+        padding: 0px 0 10px;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 40px;
+        @include breakpoint($mobile) {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 22px;
+            @include breakpoint($mobile) {
+                display:none;
+            }
+        }
+    }
+}
+
+.starting-form {
+    background-color: #efefef;
+    padding: 30px 0 100px;
+    @include breakpoint($mobile) {
+        padding: 30px 0 45px;
+    }
+
+    .starting-form__template-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .starting-form__detail {
+        .starting-form__detail-select {
+          padding-bottom: 27px;
+              font-size: 20px;
+              font-weight: 500;
+            .starting-form__detail-category {
+                font-weight: 300;
+                padding:0 0 0 30px;
+            }
+        }
+        // Bootstrap 樣式調整
+        .form-group {
+            label {
+                font-weight: 300;
+            }
+
+            .form-control {
+                border-radius: 0;
+                border: 1px solid #ccc;
+                box-shadow: none;
+            }
+        }
+
+        .form-notice{
+          text-decoration: underline;
+          color:#d48400;
+          margin-top: 7px;
+          cursor: pointer;
+          outline:none;
+        }
+
+        .starting-form-submit{
+          width:100%;
+        }
+    }
+}

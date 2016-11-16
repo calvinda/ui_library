@@ -1,0 +1,166 @@
+.pricing-banner {
+    background: transparent url('../images/pricing-banner.jpg')no-repeat 0 0;
+    background-size: cover;
+    background-position: 0 -130px;
+    padding: 120px 0 40px;
+    color: white;
+    @include breakpoint($mobile) {
+        background-position: 0;
+        padding: 0px 0 10px;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 40px;
+        @include breakpoint($mobile) {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 22px;
+            @include breakpoint($mobile) {
+                display:none;
+            }
+        }
+    }
+}
+
+.pricing-content {
+    padding: 30px 0 0;
+    @include breakpoint($mobile) {
+        padding: 30px 0 45px;
+    }
+
+    .pricing-heading {
+        @include breakpoint($mobile) {
+            font-size: 22px;
+        }
+    }
+
+    .pricing-content--divider {
+        border-right: 1px solid #bfbfbf;
+        @include breakpoint($mobile) {
+            border-right: none;
+        }
+    }
+
+    .pricing-content__price {
+        text-align: center;
+        @include breakpoint($mobile) {
+            margin-top: 30px;
+            border-bottom: 1px solid #bfbfbf;
+        }
+
+        .pricing-content__price-type {
+            margin-bottom: 22px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .pricing-content__price-unit {
+            font-size: 21px;
+            margin-top: 2px;
+            margin-right: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .pricing-content__price-value {
+            font-family: NotoSansHant-Light;
+            font-size: 80px;
+            color: #0E0E0E;
+            letter-spacing: 1.54px;
+            display: inline-block;
+            line-height: 60px;
+        }
+
+        .pricing-content__price-time {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 20px;
+        }
+    }
+}
+
+.pricing-feature {
+    width: 55%;
+    margin: 10px auto 0;
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
+
+    .pricing-feature__list {
+        text-align: left;
+        display: inline-block;
+        margin-top: 30px;
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+// 所有方案
+
+.pricing-content__all-plans {
+    background-color: #efefef;
+    padding: 30px 0 100px;
+    @include breakpoint($mobile) {
+        padding: 30px 15px 45px;
+    }
+
+    .pricing-content__plan {
+        border-bottom: 1px solid #ccc;
+        &:last-child {
+            border-bottom: none;
+        }
+        @include breakpoint($mobile) {
+            border-bottom:none;
+        }
+    }
+
+    .pricing-content__plans-heading {
+        text-align: center;
+        margin: 0;
+        @include breakpoint($mobile) {
+            text-align: left;
+            margin-bottom: 30px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+    }
+
+    .pricing-content__plans-item {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-content__plans-name {
+            margin: 0 0 10px;
+            @include breakpoint($mobile) {}
+        }
+
+        .pricing-content__plans-info {
+            @include breakpoint($mobile) {
+                margin: 0 auto 20px;
+            }
+        }
+
+        .pricing-content__plans-pricing {
+            display: block;
+            @include breakpoint($mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+}

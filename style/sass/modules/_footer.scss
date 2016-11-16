@@ -1,0 +1,53 @@
+footer {
+  border-top: 1px solid #ddd;
+  margin: 0 0 100px;
+  padding: 40px 0 0 0;
+
+    .contact {
+        font-size: 12px;
+        margin-top: 17px;
+        letter-spacing: 1px;
+
+        span {
+            display: inline-block;
+            width: 100%;
+        }
+
+        a {
+            font-weight: 400;
+            color: black;
+            font-size: 14px;
+        }
+    }
+
+    .footer-brand-logo {
+        width: 135px;
+        height: 40px;
+        margin-top: 15px;
+        display: inline-block;
+        background: transparent url("../images/hapitron-logo-footer.svg") 0 0 no-repeat;
+        background-size: contain;
+        text-indent: -999em;
+        overflow: hidden;
+    }
+
+    .footer-nav {
+        padding: 0 0 0 27px;
+
+
+        .footer-nav-heading {
+            margin-bottom: 20px;
+            font-size:16px;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin: 0 0 2px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

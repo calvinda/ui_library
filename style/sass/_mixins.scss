@@ -1,0 +1,17 @@
+//設定背景與區塊高度
+@mixin bg($bg-url,$height) {
+    background: image-url($bg-url);
+    background-size: cover;
+    min-height: $height;
+}
+//有陰影的白色小區塊
+@mixin hapi-a1__block($padding:15px 10px,$height:400px) {
+    .hapi-a1__block {
+        background-color: white;
+        padding: $padding;
+        min-height: $height;
+        margin-bottom:30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        @content;
+    }
+}

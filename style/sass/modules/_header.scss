@@ -1,0 +1,219 @@
+header {
+    min-height: 195px;
+    background-color: white;
+    padding-top: 60px;
+    @include breakpoint($mobile) {
+      min-height: 5px;
+      padding: 18px 0 6px;
+      width: 100%;
+    }
+
+    .brand-logo {
+        width: 180px;
+        height: 80px;
+        display: inline-block;
+        background: transparent url("../images/hapitron-logo.svg") 0 0 no-repeat;
+        background-size: contain;
+        text-indent: -999em;
+        overflow: hidden;
+        @include breakpoint($mobile) {
+            width: 124px;
+            height: 60px;
+            margin: 0 0 0 8px;
+        }
+    }
+
+    .hapi-sns {
+        .hot-line {
+            font-weight: 400;
+            color: black;
+            letter-spacing: 1px;
+        }
+        text-align: right;
+
+        a {
+            margin: 0 0 0 10px;
+            color: #999;
+            font-size: 16px;
+        }
+        @include breakpoint($mobile) {
+            display: none;
+        }
+    }
+
+    .hapi-nav {
+        float: right;
+        margin-top: 45px;
+        list-style: none;
+        @include breakpoint($mobile) {
+            display: none;
+        }
+
+        li {
+            float: left;
+            margin: 0 0 0 35px;
+
+            a {
+                color: black;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .icon-menu {
+        width: 30px;
+        height: 19px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/icon-menu.svg");
+        cursor: pointer;
+        float: right;
+        margin: 16px 16px 0 0;
+        display: none;
+        @include breakpoint($mobile) {
+            display: inline-block;
+        }
+    }
+}
+// 捲動式選單
+
+.scroll-menu {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    @include breakpoint($mobile) {
+        top: -80px;
+    }
+
+    .scroll-menu-list {
+        display: inline-block;
+        padding: 0;
+        margin: 5px 0 0;
+        @include breakpoint($mobile) {
+            display: none;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            margin: 0 15px;
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+    .scroll-menu-brand-logo {
+        width: 135px;
+        position: relative;
+        top: 3px;
+        height: 30px;
+        display: inline-block;
+        background: transparent url("../images/hapitron-logo-footer.svg") 0 0 no-repeat;
+        background-size: contain;
+        text-indent: -999em;
+        overflow: hidden;
+
+        @include breakpoint($mobile) {
+          width: 115px;
+          top: 4px;
+          height: 26px;
+        }
+    }
+
+    .icon-menu {
+        width: 25px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/icon-menu.svg");
+        cursor: pointer;
+        float: right;
+        margin: 10px 16px 0 0;
+        display: none;
+        @include breakpoint($mobile) {
+            display: inline-block;
+        }
+    }
+}
+
+.scroll-menu.scroll-menu-show {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    @include breakpoint($mobile) {
+        top: 0;
+    }
+}
+// 手機版選單
+
+.mobile-main-menu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: #e4e4e4;
+    z-index: 9999;
+    right: -68%;
+    width: 68%;
+    -webkit-transform: translateX(68%);
+    transform: translateX(68%);
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    display: none;
+    @include breakpoint($mobile) {
+        display: inline-block;
+    }
+
+    .btn-close {
+        display: inline-block;
+        width: 23px;
+        height: 22px;
+        background: transparent url("/images/icon_close.svg") left top no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        position: absolute;
+        right: 42px;
+        top: 19px;
+    }
+
+    .mobile-main-list {
+        text-align: center;
+        padding: 0;
+        margin-top: 40%;
+        @include breakpoint($pad) {
+            margin-top: 20%;
+        }
+
+        li {
+            list-style: none;
+            font-size: 20px;
+            margin-bottom: 25px;
+            letter-spacing: 4px;
+            font-weight: 300;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+.mobile-main-menu.show-nav {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    right: 0;
+    top: 0;
+}

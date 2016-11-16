@@ -1,0 +1,94 @@
+//@include breakpoint($high-tide) {}
+@import url( 'http://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", "Noto Sans TC", "Arial", sans-serif;
+    //font-family: "Helvetica Neue", "微軟正黑體", "Microsoft JhengHei", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.65em;
+    font-weight: 300;
+    text-shadow: rgba(0,0,0,0.2) 0.01em 0.01em 0.01em !important;
+    -webkit-font-smoothing: antialiased;
+}
+ul{
+  padding:0;
+  li{
+    list-style:none;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #555;
+
+    &:hover {
+        color: black;
+        text-decoration:none;
+    }
+}
+
+.space-top-2 {
+    margin-top: 2%;
+}
+
+.space-top-5 {
+    margin-top: 5%;
+}
+
+.space-top-10 {
+    margin-top: 10%;
+}
+
+.space-top-15 {
+    margin-top: 15%;
+}
+
+.space-top-20 {
+    margin-top: 20%;
+}
+
+.space-top-25 {
+    margin-top: 25%;
+}
+
+.space-top-30 {
+    margin-top: 30%;
+}
+
+.space-top-35 {
+    margin-top: 35%;
+}
+
+.space-top-40 {
+    margin-top: 40%;
+}
+
+
+// 捲動套件
+
+#scrollUp{
+  bottom: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: url('../images/top.svg') no-repeat;
+  background-size:contain;
+}
