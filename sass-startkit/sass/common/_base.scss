@@ -1,0 +1,36 @@
+/*
+    base
+*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", "微軟正黑體", "Microsoft JhengHei", "Arial", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.65em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+    word-wrap: break-word; //text-shadow: rgba(0,0,0,0.2) 0.01em 0.01em 0.01em !important;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    ul {
+        padding: 0 !important;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+a:hover{
+    text-decoration: none;
+}

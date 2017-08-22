@@ -1,0 +1,42 @@
+.main-header{
+    background-color: #ffc82c;
+    height: 50px;
+
+    .brand-logo{
+        position: relative;
+        .logo-icon{
+            position: absolute;
+            background-color: black;
+            padding: 10px;
+            z-index: 10;
+            top: 0;
+            img{
+                width: 50px;
+            }
+        }
+        .logo-title{
+            position: relative;
+            img{
+                width: 50px;
+            }
+        }
+    }
+
+    .header-inner{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-menu{
+        li{
+            float: left;
+            padding: 10px 0;
+            margin: 0 20px;
+            a{
+                color: black;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}

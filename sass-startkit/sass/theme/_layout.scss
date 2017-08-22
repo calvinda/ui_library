@@ -1,0 +1,456 @@
+
+// =======================================================================
+// 頁面與特殊區塊編排
+// =======================================================================
+
+
+//首頁專欄推薦列表
+
+.large-column-list{
+    padding: 20px 0px;
+
+
+    ul{
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        li{
+            list-style:none;
+            display:inline-block;
+            margin:0 20px;
+            text-align:center;
+        
+            @media (--pad) {
+                         margin:0 9px;
+                    }
+        
+            img{
+              width: 155px;
+              @media (--pad) {
+                        width: 120px;
+                    }
+            }
+            span{
+              display: block;
+                  margin-top: 15px;
+                  color: black;
+                  font-weight: bold;
+            }
+          }
+    }
+
+
+}
+
+// =========================================
+// 畫面切割 右半部 側邊欄
+// =========================================
+
+.sidebar{
+
+}
+
+.sidebar--authorInfo{
+  border-radius: 3px;
+  padding: 15px 15px;
+
+  li{
+    padding:15px 0;
+    border-bottom:1px solid #bababa;
+    &:last-child{
+      border-bottom:0px;
+    }
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 14px;
+  }
+}
+
+
+// =========================================
+// 畫面切割 上半部
+// =========================================
+
+.headerBlock {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 30px;
+    // for user profile
+    &--userProfile {
+        background-color: #F6F6F6;
+        border-bottom: 1px solid #C6C6C6;
+        padding-top: 130px;
+    }
+}
+
+.space-top-main{
+  margin-top:100px;
+
+  @media (--mobile) {
+    margin-top:65px;
+}
+}
+
+// =========================================
+// 內容寬度設置
+// =========================================
+
+.full-width {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+}
+
+.large-width {
+    max-width: 1000px;
+}
+
+.middle-width {
+    max-width: 770px;
+}
+
+.small-width {
+    max-width: 740px;
+}
+// =========================================
+// 編排位置應用
+// =========================================
+
+// 上外距 ==================
+.space-top-1 {
+    margin-top: 1px;
+}
+
+.space-top-2 {
+    margin-top: 2px;
+}
+
+.space-top-3 {
+    margin-top: 3px;
+}
+
+.space-top-4 {
+    margin-top: 4px;
+}
+
+.space-top-5 {
+    margin-top: 5px;
+    @media (--desktop)  {
+        margin-top: 10px;
+    }
+    @media (--pad)  {
+        margin-top: 10px;
+    }
+}
+
+.space-top-6 {
+    margin-top: 6px;
+}
+
+.space-top-7 {
+    margin-top: 7px;
+    @media (--pad)  {
+        margin-top: 10px;
+    }
+}
+
+.space-top-8 {
+    margin-top: 8px;
+}
+
+.space-top-9 {
+    margin-top: 9px;
+}
+
+.space-top-10 {
+    margin-top: 10px;
+}
+
+.space-top-15 {
+    margin-top: 15px;
+}
+
+.space-top-20 {
+    margin-top: 20px;
+}
+
+.space-top-25 {
+    margin-top: 25px;
+}
+
+.space-top-30 {
+    margin-top: 30px;
+}
+
+.space-top-35 {
+    margin-top: 35px;
+}
+
+.space-top-40 {
+    margin-top: 40px;
+}
+.space-top-45 {
+    margin-top: 45px;
+}
+.space-top-50 {
+    margin-top: 50px;
+}
+.space-top-55 {
+    margin-top: 55px;
+}
+.space-top-60 {
+    margin-top: 60px;
+}
+.space-top-65 {
+    margin-top: 65px;
+}
+.space-top-70 {
+    margin-top: 70px;
+}
+.space-top-75 {
+    margin-top: 75px;
+}
+.space-top-80 {
+    margin-top: 80px;
+}
+.space-top-85 {
+    margin-top: 85px;
+}
+.space-top-90 {
+    margin-top: 90px;
+}
+.space-top-95 {
+    margin-top: 95px;
+}
+.space-top-100 {
+    margin-top: 100px;
+}
+// 下外距 ==================
+.space-bottom-1 {
+    margin-bottom: 1px;
+}
+.space-bottom-2 {
+    margin-bottom: 2px;
+}
+.space-bottom-3 {
+    margin-bottom: 3px;
+}
+.space-bottom-4 {
+    margin-bottom: 4px;
+}
+.space-bottom-5 {
+    margin-bottom: 5px;
+}
+.space-bottom-6 {
+    margin-bottom: 6px;
+}
+.space-bottom-7 {
+    margin-bottom: 7px;
+}
+.space-bottom-8 {
+    margin-bottom: 8px;
+}
+.space-bottom-9 {
+    margin-bottom: 9px;
+}
+.space-bottom-10 {
+    margin-bottom: 10px;
+}
+.space-bottom-15 {
+    margin-bottom: 15px;
+}
+.space-bottom-20 {
+    margin-bottom: 20px;
+}
+.space-bottom-25 {
+    margin-bottom: 25px;
+}
+.space-bottom-30 {
+    margin-bottom: 30px;
+}
+.space-bottom-35 {
+    margin-bottom: 35px;
+}
+.space-bottom-40 {
+    margin-bottom: 40px;
+}
+.space-bottom-45 {
+    margin-bottom: 45px;
+}
+.space-bottom-50 {
+    margin-bottom: 50px;
+}
+.space-bottom-55 {
+    margin-bottom: 55px;
+}
+.space-bottom-60 {
+    margin-bottom: 60px;
+}
+.space-bottom-65 {
+    margin-bottom: 65px;
+}
+.space-bottom-70 {
+    margin-bottom: 70px;
+}
+.space-bottom-75 {
+    margin-bottom: 75px;
+}
+.space-bottom-80 {
+    margin-bottom: 80px;
+}
+.space-bottom-85 {
+    margin-bottom: 85px;
+}
+.space-bottom-90 {
+    margin-bottom: 90px;
+}
+.space-bottom-95 {
+    margin-bottom: 95px;
+}
+.space-bottom-100 {
+    margin-bottom: 100px;
+}
+// 左外距 ==================
+.space-left-1 {
+    margin-left: 1px;
+}
+
+.space-left-2 {
+    margin-left: 2px;
+}
+
+.space-left-5 {
+    margin-left: 5px;
+}
+
+.space-left-10 {
+    margin-left: 10px;
+}
+
+.space-left-15 {
+    margin-left: 15px;
+}
+
+.space-left-20 {
+    margin-left: 20px;
+}
+.space-left-25 {
+    margin-left: 25px;
+}
+.space-left-30 {
+    margin-left: 30px;
+}
+.space-left-35 {
+    margin-left: 35px;
+}
+.space-left-40 {
+    margin-left: 40px;
+}
+.space-left-45 {
+    margin-left: 45px;
+}
+
+// 右外距 ==================
+.space-right-1 {
+    margin-right:1px;
+}
+.space-right-2 {
+    margin-right:2px;
+}
+.space-right-3 {
+    margin-right:3px;
+}
+.space-right-4 {
+    margin-right:4px;
+}
+.space-right-5 {
+    margin-right:5px;
+}
+.space-right-6 {
+    margin-right:6px;
+}
+
+.space-right-7 {
+    margin-right:7px;
+}
+
+.space-right-8 {
+    margin-right:8px;
+}
+
+.space-right-9 {
+    margin-right:9px;
+}
+
+.space-right-10 {
+    margin-right:10px;
+}
+.space-right-15 {
+    margin-right:15px;
+}
+.space-right-20 {
+    margin-right:20px;
+}
+.space-right-25 {
+    margin-right:25px;
+}
+.space-right-30 {
+    margin-right:30px;
+}
+.space-right-35 {
+    margin-right:35px;
+}
+.space-right-40 {
+    margin-right:40px;
+}
+.space-right-45 {
+    margin-right:45px;
+}
+.space-right-50 {
+    margin-right:50px;
+}
+
+
+
+
+// =========================================
+// 編排高度尺寸應用
+// =========================================
+
+.min-height-20 {
+    min-height: 20px;
+}
+
+.min-height-50 {
+    min-height: 50px;
+}
+
+.min-height-80 {
+    min-height: 80px;
+}
+
+.min-height-100 {
+    min-height: 100px;
+}
+
+.min-height-150 {
+    min-height: 150px;
+}
+
+.min-height-200 {
+    min-height: 200px;
+    @media (--pad)  {
+        min-height: 200px * 0.8;
+    }
+}
+
+.min-height-250 {
+    min-height: 250px;
+}
+
+.min-height-300 {
+    min-height: 300px;
+}

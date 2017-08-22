@@ -1,0 +1,56 @@
+// 圖片背景系列 =================================================
+
+// 灰色背景
+
+.bgGrayLight {
+    background-color: #ededed;
+}
+
+.bgGrayDark {
+    background-color: #3b3b3b;
+    color: white;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+}
+
+.bgImage-cover {
+    background-size: cover;
+}
+
+// 分隔線系列 =================================================
+
+// 這可以依附在bootstrap col上
+.left-divider-line {
+    border-left: 1px solid $line-color-lighter;
+}
+
+// 文字間的分隔線
+.lineDivider {
+    padding-right: 0.15em;
+    padding-left: 0.15em;
+    font-size: 14px;
+
+    &:before {
+        color: #dadada;
+        content: "｜";
+    }
+}
+
+
+.border-right {
+    border-right: 1px solid #d0d0d0;
+}
+
+.border-left {
+    border-left: 1px solid #d0d0d0;
+}
+
+.border-top {
+    border-top: 1px solid #d4d4d4;
+}
